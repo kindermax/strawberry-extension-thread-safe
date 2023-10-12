@@ -1,0 +1,20 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "m.kindritskiy", email = "kindritskiy.m@gmail.com"},
+]
+dependencies = [
+    "requests>=2.31.0",
+    "strawberry-graphql[debug-server]>=0.209.6",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm]
+
+[tool.pdm.scripts]
+server = "strawberry server src.schema:schema"
+test = "python src/test.py"
